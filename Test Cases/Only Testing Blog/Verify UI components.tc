@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test case is used to verify UI component</description>
+   <name>Verify UI components</name>
+   <tag>UI</tag>
+   <comment></comment>
+   <testCaseGuid>b97bd455-b13f-493b-897c-774270bd73a5</testCaseGuid>
+</TestCaseEntity>
