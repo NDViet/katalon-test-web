@@ -20,9 +20,13 @@ import com.kms.katalon.core.configuration.RunConfiguration
 
 WebUI.openBrowser('http://only-testing-blog.blogspot.com/2013/09/test.html')
 
+WebUI.takeScreenshotAsCheckpoint("Homepage")
+
 WebUI.verifyElementPresent(findTestObject('Object Repository/Only Testing Blog/Choose File'), 5)
 
 WebUI.uploadFile(findTestObject('Object Repository/Only Testing Blog/Choose File'), RunConfiguration.projectDir + '/Data Files/LICENSE')
+
+WebUI.takeScreenshotAsCheckpoint("UploadFile")
 
 for (String country : Arrays.asList("USA", "Japan", "Germany")) {
 	WebUI.click(findTestObject("Only Testing Blog/Available Country", ["value": country]))
@@ -31,6 +35,6 @@ for (String country : Arrays.asList("USA", "Japan", "Germany")) {
 	WebUI.verifyElementVisible(findTestObject("Only Testing Blog/Selected Country", ["value": country]))
 }
 
-WebUI.takeScreenshotAsCheckpoint("Homepage")
+WebUI.takeScreenshotAsCheckpoint("SelectedCountry")
 
 WebUI.closeBrowser()
