@@ -31,4 +31,6 @@ for (String country : Arrays.asList("USA", "Japan", "Germany")) {
 	WebUI.verifyElementVisible(findTestObject("Only Testing Blog/Selected Country", ["value": country]))
 }
 
+WebUI.takeScreenshotAsCheckpoint("Homepage")
+
 WebUI.closeBrowser()
