@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-   <description></description>
-   <name>test-katalon</name>
+   <description>A sample test Web project is created by Katalon Studio and executed with Katalon TestOps</description>
+   <name>test-katalon-web</name>
    <tag></tag>
    <UUID>b269136b-24df-4028-8ab3-6398b92191f3</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>D:\Code\katalon-test-web\test-katalon.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
