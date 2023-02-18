@@ -28,13 +28,28 @@ WebUI.uploadFile(findTestObject('Object Repository/Only Testing Blog/Choose File
 
 WebUI.takeScreenshotAsCheckpoint("UploadFile")
 
+i = 0
 for (String country : Arrays.asList("USA", "Japan", "Germany")) {
+	i += 1
 	WebUI.click(findTestObject("Only Testing Blog/Available Country", ["value": country]))
 	WebUI.click(findTestObject("Only Testing Blog/Add Country Button"))
 	WebUI.verifyElementNotPresent(findTestObject("Only Testing Blog/Available Country", ["value": country]), 5)
 	WebUI.verifyElementVisible(findTestObject("Only Testing Blog/Selected Country", ["value": country]))
+	WebUI.takeScreenshotAsCheckpoint("AddCountry"+i)
 }
 
 WebUI.takeScreenshotAsCheckpoint("SelectedCountry")
+
+i = 0
+for (String country : Arrays.asList("USA", "Japan", "Germany")) {
+	i += 1
+	WebUI.click(findTestObject("Only Testing Blog/Selected Country", ["value": country]))
+	WebUI.click(findTestObject("Only Testing Blog/Remove Country Button"))
+	WebUI.verifyElementNotPresent(findTestObject("Only Testing Blog/Selected Country", ["value": country]), 5)
+	WebUI.verifyElementVisible(findTestObject("Only Testing Blog/Available Country", ["value": country]))
+	WebUI.takeScreenshotAsCheckpoint("RemoveCountry"+i)
+}
+
+WebUI.takeScreenshotAsCheckpoint("RemovedCountry")
 
 WebUI.closeBrowser()
