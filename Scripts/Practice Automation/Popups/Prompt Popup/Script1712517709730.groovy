@@ -23,11 +23,7 @@ WebUI.click(findTestObject('Object Repository/Practice Automation/Popups/Prompt 
 
 WebUI.waitForAlert(5)
 
-WebUI.takeScreenshot()
-
 WebUI.setAlertText("NDVIET.ORG")
-
-WebUI.takeScreenshot()
 
 WebUI.acceptAlert()
 
