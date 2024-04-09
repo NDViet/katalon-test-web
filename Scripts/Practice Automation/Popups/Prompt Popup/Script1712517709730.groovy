@@ -23,10 +23,24 @@ WebUI.click(findTestObject('Object Repository/Practice Automation/Popups/Prompt 
 
 WebUI.waitForAlert(5)
 
-WebUI.setAlertText("NDVIET.ORG")
+WebUI.setAlertText('NDVIET.ORG')
 
 WebUI.acceptAlert()
 
 WebUI.verifyElementText(findTestObject('Object Repository/Practice Automation/Popups/Prompt Result Text'), 'Nice to meet you, NDVIET.ORG!')
 
 WebUI.takeScreenshot()
+
+WebUI.click(findTestObject('Object Repository/Practice Automation/Popups/Prompt Popup Button'))
+
+WebUI.waitForAlert(5)
+
+WebUI.setAlertText('Katalon Platform')
+
+WebUI.acceptAlert()
+
+WebUI.verifyElementText(findTestObject('Object Repository/Practice Automation/Popups/Prompt Result Text'), 'Nice to meet you, Katalon Platform!')
+
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
