@@ -4,12 +4,11 @@
    <name>test-katalon-web</name>
    <tag></tag>
    <UUID>b269136b-24df-4028-8ab3-6398b92191f3</UUID>
-   <freeLicense>false</freeLicense>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
-   <modifiedEdition>ENTERPRISE</modifiedEdition>
    <modifiedVersion>9.3.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>D:\Code\GitHub\katalon-test-web\test-katalon.prj</projectFileLocation>
+   <projectFileLocation>D:\GitHub\katalon-test-web\test-katalon.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
